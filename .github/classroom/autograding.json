@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Run Computer",
+      "setup": "",
+      "run": "make clean compile simulate",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
