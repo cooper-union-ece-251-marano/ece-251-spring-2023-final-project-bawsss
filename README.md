@@ -47,6 +47,9 @@ Output (hex): 0022
 Output (dec):    34
 ```
 
+Youtube Video: https://youtu.be/MxGjCnYkfdc
+Sorry for the bad quality, recently downloaded ubuntu and OBS doesn't seem to work.
+
 ## **--------------------------------------------**
 
 ## **Overall Description**
