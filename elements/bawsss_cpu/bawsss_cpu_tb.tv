@@ -1,0 +1,28 @@
+//rst,instruction,readData,memWrite,expAluResult,expMemWriteData,expPc
+1_0000_0000_0_0000_0000_0000
+
+//rst-inst-readData-memWrite-expAlu-expMemWriteData-expPc
+// addi $a0 $zero 7 => $a0 = 7
+0_a047_0000_0_0007_XXXX_0002
+// addi $a0 $a0 3 => $a0 = 10
+0_a443_0000_0_000a_0007_0004
+// add $s0 $a0 $a0 => $s0 = 20
+0_044A_0000_0_0014_000a_0006
+// sll $s0 $s0 2 => $s0 = 80
+0_6A2A_0000_0_0050_xxxx_0008
+// srl $s1 $s0 1 => $s1 = 40
+0_7A1B_0000_0_0028_xxxx_000a
+// slt $at $s1 $s0 => $at = 1
+0_8BA1_0000_0_0001_0050_000c
+// jal 0xA
+//0_f001_0000_0_0000_0000_000e
+//jr $ra
+//0_3f00_0000_0_0010_0000_0002
+//j 0x0
+0_e000_0000_0_0000_0000_000e
+// addi $a0 $a0 7
+0_a047_0000_0_0007_000a_0000
+// addi $a0 $zero 7 => a0 =17
+//0_a047_0000_0_0007_000a_0000
+// subi $a0 $zero 0
+//0_b040_0000_0_0000_0007_0002

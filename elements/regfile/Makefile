@@ -12,12 +12,11 @@
 # CHANGE THESE THREE LINES FOR YOUR DESIGN
 #
 #TOOL INPUT
-COMPONENT = example
+COMPONENT = regfile
 #SRC = $(shell ls *.sv)
 SRC = $(wildcard *.sv)
 SIM_ARGS=+a=3 +b=2 +s=0
-TBOUTPUT = $(COMPONENT).vcd	# THIS NEEDS TO MATCH THE OUTPUT FILE
-									# FROM YOUR TESTBENCH
+TBOUTPUT = $(COMPONENT).vcd	# THIS NEEDS TO MATCH THE OUTPUT FILE FROM YOUR TESTBENCH
 ###############################################################################
 # BE CAREFUL WHEN CHANGING ITEMS BELOW THIS LINE
 ###############################################################################
@@ -45,3 +44,4 @@ display: $(TBOUTPUT)
 
 clean:
 	/bin/rm -f $(COMPONENT).vvp *.vcd a.out compiler.out
+

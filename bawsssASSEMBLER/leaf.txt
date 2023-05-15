@@ -1,0 +1,18 @@
+addi $s0 $zero 5 # INPUT: g (can only add up to 7 at once)
+addi $s1 $zero 3 # INPUT: h
+addi $s2 $zero 2 # INPUT: i
+addi $s3 $zero 1 # INPUT: j
+addi $sp $zero -2
+jal 0xE
+sw $v0 0($zero)
+addi $sp $sp -4
+sw $ra 0($sp)
+sw $a0 2($sp)
+add $t0 $s0 $s1
+add $t1 $s2 $s3
+sub $a0 $t0 $t1
+add $v0 $a0 $zero
+lw $a0 2($sp)
+lw $ra 0($sp)
+addi $sp $sp 4
+jr $ra
